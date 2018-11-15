@@ -1,0 +1,23 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <SwitchPreference
+            android:key="@string/showBackgroundKey"
+            android:summary="@string/showBackgroundSummary"
+            android:summaryOn="@string/showBackgroundSummaryOn"
+            android:summaryOff="@string/showBackgroundSummaryOff"
+            android:switchTextOn="@string/showBackgroundSwitchTextOn"
+            android:switchTextOff="@string/showBackgroundSwitchTextOff"
+            android:defaultValue="@string/showBackgroundDefaultValue"
+            android:title="@string/showBackgroundTitle" />
+
+        <SwitchPreference
+            android:key="@string/useAutoNightModeKey"
+            android:summary="@string/useAutoNightModeSummary"
+            android:summaryOn="@string/useAutoNightModeSummaryOn"
+            android:summaryOff="@string/useAutoNightModeSummaryOff"
+            android:switchTextOn="@string/useAutoNightModeSwitchTextOn"
+            android:switchTextOff="@string/useAutoNightModeSwitchTextOff"
+            android:defaultValue="@string/useAutoNightModeDefaultValue"
+            android:title="@string/useAutoNightModeSwitchTitle" />
+
+</PreferenceScreen>

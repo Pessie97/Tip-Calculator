@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_text_size">34sp</dimen>
+    <dimen name="textView_text_size">26sp</dimen>
+    <dimen name="button_text_size">36sp</dimen>
+
+    <dimen name="button_minWidth">195dp</dimen>
+
+    <dimen name="arrowButton_minWidth">80dp</dimen>
+    <dimen name="numberPad_minWidth">180dp</dimen>
+
+    <!-- Enlarged screen margins: 1.5x from base. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="ll_margin">8dp</dimen>
+
+
+</resources>

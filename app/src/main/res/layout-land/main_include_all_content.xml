@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:showIn="@layout/content_main">
+
+    <!-- Top -->
+    <include
+        android:id="@+id/banner"
+        layout="@layout/main_include_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Middle -->
+    <!-- Left Layout: TableLayout containing the EditTexts -->
+    <include
+        android:id="@+id/fields"
+        layout="@layout/main_include_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_margin="@dimen/ll_margin"
+        android:layout_toLeftOf="@+id/number_pad"
+        android:layout_toStartOf="@+id/number_pad"
+        />
+
+
+    <!-- Right Layout: TableLayout with number pad/buttons -->
+    <include
+        android:id="@+id/number_pad"
+        layout="@layout/main_include_number_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/banner"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/ll_margin"
+        />
+
+<!-- Bottom -->
+    <include
+        layout="@layout/main_include_tool_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fields"
+        android:layout_margin="@dimen/ll_margin"
+        android:layout_toLeftOf="@+id/number_pad"
+        android:layout_toStartOf="@+id/number_pad"
+        android:gravity="center_horizontal"
+        />
+</RelativeLayout>

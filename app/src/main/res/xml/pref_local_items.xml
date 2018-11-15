@@ -1,0 +1,21 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<EditTextPreference-->
+    <com.example.pessi.tipcalculator.classes.EditTextPreferenceDayNight
+        android:defaultValue="@string/defaultTaxPercentageDefaultValue"
+        android:inputType="numberDecimal"
+        android:key="@string/defaultTaxPercentageKey"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:title="@string/defaultTaxPercentageTitle"/>
+
+    <!--<EditTextPreference-->
+    <com.example.pessi.tipcalculator.classes.EditTextPreferenceDayNight
+
+        android:defaultValue="@string/defaultTipPercentageDefaultValue"
+        android:inputType="numberDecimal"
+        android:key="@string/defaultTipPercentageKey"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:title="@string/defaultTipPercentageTitle"/>
+</PreferenceScreen>

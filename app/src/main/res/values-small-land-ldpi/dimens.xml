@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_text_size">16sp</dimen>
+    <dimen name="textView_text_size">11sp</dimen>
+    <dimen name="button_text_size">10sp</dimen>
+
+    <dimen name="fab_margin">4dp</dimen>
+
+    <dimen name="button_minWidth">10dp</dimen>
+
+    <!-- Overridden widths for specific child button styles -->
+    <dimen name="arrowButton_minWidth">18dp</dimen>
+    <dimen name="toolButton_minWidth">100dp</dimen>
+
+    <!-- The numberPad will have its own minimum height and width -->
+    <dimen name="numberPad_minWidth">40dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="ll_margin">2dp</dimen>
+</resources>

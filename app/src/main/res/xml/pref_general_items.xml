@@ -1,0 +1,13 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <SwitchPreference
+            android:key="@string/useAutoCalculateKey"
+            android:summary="@string/useAutoCalculateSummary"
+            android:summaryOn="@string/useAutoCalculateSummaryOn"
+            android:summaryOff="@string/useAutoCalculateSummaryOff"
+            android:switchTextOn="@string/useAutoCalculateSwitchTextOn"
+            android:switchTextOff="@string/useAutoCalculateSwitchTextOff"
+            android:defaultValue="@string/useAutoCalculateDefaultValue"
+            android:title="@string/useAutoCalculateSwitchTitle" />
+</PreferenceScreen>
+

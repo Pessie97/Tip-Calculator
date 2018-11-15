@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Since we're using ActionBarCompat, any action item attributes
+    come from the XML namespace of ActionBarCompat instead of the android namespace.
+    Here we've added a new support namespace added to the menu element
+    allowing us to use the 'showAsAction' attribute in a backwards-compatible way.
+    Any other action item attributes used should be referenced from this namespace too
+    (actionProviderClass, actionViewClass, actionLayout).
+-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+    <!--
+        Here we create our items,
+        setting support:showAsAction to display the item (with its text caption)
+        as an action (i.e. like a toolbar button)
+        only if there's room on the compatible Action Bar.
+        If there is no room, then it is placed into the menu
+    -->
+    <item
+        android:id="@+id/menu_clearField"
+        android:icon="@drawable/ic_clear_white"
+        android:title="@string/action_clear_field"
+        support:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_calculate"
+        android:icon="@drawable/ic_launch_white"
+        android:title="@string/action_calculate"
+        support:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_resetAll"
+        android:icon="@drawable/ic_clear_all_white"
+        android:title="@string/action_reset_all"
+        support:showAsAction="ifRoom|withText"/>
+
+    <!--
+        Here we set the settings item to always be in the overflow menu,
+        as opposed to a toolbar button, by setting support:showAsAction to never.
+    -->
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings_white"
+        android:title="@string/action_settings"
+        support:showAsAction="never"/>
+
+    <!--
+    To demonstrate the concept, we'll handle this item using a custom method (via onClick below)
+    rather than in the "onOptionsItemSelected" method as we do for the other choices
+    This one, too, will never be shown on the ActionBar, but rather in the menu only.
+    -->
+    <item
+        android:icon="@drawable/ic_info_white"
+        android:title="@string/action_about"
+        support:showAsAction="never"
+        android:onClick="showAbout"/>
+</menu>

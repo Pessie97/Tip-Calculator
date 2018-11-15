@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_text_size">36sp</dimen>
+    <dimen name="textView_text_size">30sp</dimen>
+    <dimen name="button_text_size">30sp</dimen>
+
+    <!-- Enlarged screen margins: 3x from base. -->
+    <dimen name="activity_horizontal_margin">48dp</dimen>
+    <dimen name="ll_margin">24dp</dimen>
+
+    <!--All Borderless Buttons will have this minimum height-->
+    <dimen name="button_minHeight">36dp</dimen>
+
+    <!-- Default Borderless Button minimum width -->
+    <dimen name="button_minWidth">23dp</dimen>
+
+    <!-- Overridden widths for specific child button styles -->
+    <dimen name="arrowButton_minWidth">100dp</dimen>
+    <dimen name="toolButton_minWidth">300dp</dimen>
+
+    <!-- The numberPad will have its own minimum height and width -->
+    <dimen name="numberPad_minWidth">230dp</dimen>
+
+</resources>
